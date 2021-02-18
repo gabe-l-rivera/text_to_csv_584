@@ -6,7 +6,8 @@ a = []
 b = []
 
 
-# open raw data file
+# open raw data file.
+# change "data.txt" to the name of your input file. You may need to include the path to the file.
 with open("data.txt","r") as file:
         # split data line by line
         data=iter(file.read().split())
@@ -30,8 +31,8 @@ with open("data.txt","r") as file:
 a_np = np.array(a)
 b_np = np.array(b)
 
-# create two column file
+# create two column file, voltage and current may be subject to change
 df = pd.DataFrame({"Voltage" : a_np, "Current" : b_np})
 
-# turn it into a csv and save it to a specific directory
+# turn it into a csv and save it to a specific directory. obviously you will need to change the file path
 df.to_csv(r'~/Desktop/Spring 21/EE 584/post_process.csv', index=None)
