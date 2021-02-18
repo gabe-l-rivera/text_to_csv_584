@@ -8,6 +8,8 @@ Steps to utilize this program:
 
 2) highlight the raw data, numbers only, copy and paste into a text file
 
+
+
 3) save text file to your preferred location
 
 4) edit this program accordingly to your data file's path and the path where you would like to save the output csv file as well
